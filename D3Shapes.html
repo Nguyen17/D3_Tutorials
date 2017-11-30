@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>D3 Tutorial</title>
+
+	<!-- Link to most current version of D3 -->
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+
+</head>
+
+<body>
+	<script>
+
+		/* Create Canvas */
+		var canvas = d3
+
+			/* Select where you want to put this */
+			.select("body")
+
+			/* Select the type of what you want to append */
+			.append("svg")
+
+			/* Specify Attributes */
+			.attr("height", 500)
+			.attr("width", 500);
+
+
+		/* NOTE: SVG Objects are placed in top left corner
+				if coordinates are not specified
+		*/
+
+		/* Put a circle object into the canvas */
+		var circle = canvas.append("circle")
+
+					/* "cx" Horitonzal Attribute */
+					.attr("cx", 250)
+
+					/* "cy" Vertical Attribute */
+					.attr("cy", 250)
+
+					/* "r" Radius Attribute */
+					.attr("r", 50)
+
+					/* Fill in the circle with red */
+					.attr("fill", "red");
+
+		/* Put a rectangle object into the canvas */
+		var rect = canvas.append("rect")
+					.attr("width", 100)
+					.attr("height", 50);
+
+		var line = canvas.append("line")
+
+					/* Assign Point1 coordinates */
+					.attr("x1", 0)
+					.attr("y1", 100)
+
+					/* Assign Point2 coordinates */
+					.attr("x2", 400)
+					.attr("y2", 400)
+
+					/* Allows Line to be visible */
+					.attr("stroke", "green")
+					.attr("stroke-width", 10);
+					
+
+		
+	</script>
+</body>
+</html>
