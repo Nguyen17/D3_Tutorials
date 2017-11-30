@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html>
-   <head>
-   </head>
-   <body>
-      <h1>D3 Tutorals</h1>
-      <p>D3.js Tutorials Plus Code Snippets</p>
+# D3 Tutorials
+The goal of this repo is to learn and understand D3 and how we can use it to make data easily digestable.
 
-      
-         <a href="https://www.youtube.com/watch?v=qIIKw2RFNlU&list=PL6il2r9i3BqH9PmbOf5wA5E1wOG3FT22p&index=2">Introduction to Selecting and Appending</a>
-
-         <p align="center">
-         <img src="shot1.png">
-         </p>
-   </body>
-</html>
+![Alt text](/relative/path/to/shot1.png?raw=true "Optional Title")
