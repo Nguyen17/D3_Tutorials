@@ -10,5 +10,7 @@ Code snippets for each video will be included.
     - [Code and Output](https://github.com/Reeechi/D3_Tutorials/tree/master/VideoCodeSnippets/SVGShapes)
 3. [Visualizing Data](https://www.youtube.com/watch?v=4haBbPEClP4&amp;index=4&amp;list=PL6il2r9i3BqH9PmbOf5wA5E1wOG3FT22p)
     - [Code and Output](https://github.com/Reeechi/D3_Tutorials/tree/master/VideoCodeSnippets/VisualizingData)
+4. [Scales](https://www.youtube.com/watch?v=iMYkVLWc3y0&index=5&list=PL6il2r9i3BqH9PmbOf5wA5E1wOG3FT22p)
+    - [Code and Output](https://github.com/Reeechi/D3_Tutorials/tree/master/VideoCodeSnippets/Scales)
     
 
