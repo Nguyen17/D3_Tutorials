@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<title>D3 Tutorial</title>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+
+</head>
+<body>
+	<script>
+
+		/* Data to represent visually */
+		var dataArray = [20, 40, 50, 60];
+
+		var width = 500;
+		var height = 500;
+
+
+		/* Scales defined here */
+		/* In this tutorial, the scales are called in
+			the "width" and "fill" attributes */
+		var widthScale = d3.scale.linear()
+
+						/* Domain defines our original range */
+						.domain([0, 60])
+
+						/* Range changes our current range */
+						.range([0, width]);
+
+		var colorScale = d3.scale.linear()
+					.domain ([0, 60])
+					.range(["red", "blue"])
+
+		var canvas = d3.select("body")
+					.append("svg")
+					.attr("width", 500)
+					.attr("height", 500);
+
+		/* selectAll selects all elements of the selector you specifiy */
+		/* In this context, "rect" does not exist, but it is still useful */
+		var bars = canvas.selectAll("rect")
+
+					/* Specify where you will be grabbing data from */
+					.data(dataArray)
+
+					/* Returns placeholders for each DOM element (in this case "rect") */
+					/* In this case, 3 place holders because we have 3 elements */
+					.enter()
+						/* For eac placeholder we have, we add a "rect" object */
+						.append("rect")
+
+						/* Since "rect" doesn't actually exist, we need to create some attributes */
+
+						/* return widthScale(d) passes in the current data and rescales it to fit */
+						.attr("width", function(d) { return widthScale(d); } )
+						.attr("height", 50)
+						.attr("fill", function(d) {return colorScale(d)})
+
+						/* Creates a vertical distance of "(100) - height" between each rect object */
+						/* Syntax: function(data, index) {} */
+						.attr("y", function(d, i) { return (i * 100) });
+	</script>
+</body>
+</html>
