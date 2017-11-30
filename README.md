@@ -22,11 +22,12 @@
             <a href="https://www.youtube.com/watch?v=4haBbPEClP4&index=4&list=PL6il2r9i3BqH9PmbOf5wA5E1wOG3FT22p">Visualizing Data
             </a>
          </li>
+      </ol>
 
          <p align="center">
          <img src="shot1.png">
          </p>
 
-      </ol>
+
    </body>
 </html>
