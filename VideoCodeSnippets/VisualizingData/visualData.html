@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>D3 Tutorial</title>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+
+</head>
+<body>
+	<script>
+
+		/* Data to represent visually */
+		var dataArray = [20, 40, 50];
+
+		var canvas = d3.select("body")
+					.append("svg")
+					.attr("width", 500)
+					.attr("height", 500);
+
+		/* selectAll selects all elements of the selector you specifiy */
+		/* In this context, "rect" does not exist, but it is still useful */
+		var bars = canvas.selectAll("rect")
+
+					/* Specify where you will be grabbing data from */
+					.data(dataArray)
+
+					/* Returns placeholders for each DOM element (in this case "rect") */
+					/* In this case, 3 place holders because we have 3 elements */
+					.enter()
+						/* For eac placeholder we have, we add a "rect" object */
+						.append("rect")
+
+						/* Since "rect" doesn't actually exist, we need to create some attributes */
+
+						/* Width must be a function of the data to be dynamic */
+						/* function(d) loops through all the data elements and returns each */
+						.attr("width", function(d) { return d * 10; } )
+						.attr("height", 50)
+
+						/* Creates a vertical distance of "(100) - height" between each rect object */
+						/* Syntax: function(data, index) {} */
+						.attr("y", function(d, i) { return (i * 100) });
+	</script>
+</body>
+</html>
