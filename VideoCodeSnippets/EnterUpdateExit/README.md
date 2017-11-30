@@ -15,3 +15,4 @@
      
      
 ## Enter, Update, Exit Expected Output
+<img width="101" alt="screen shot 2017-11-30 at 3 43 01 pm" src="https://user-images.githubusercontent.com/13631369/33461249-7488c178-d5e6-11e7-9f9e-1da57e148c77.png">
